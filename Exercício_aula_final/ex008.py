@@ -1,4 +1,2 @@
-m1=float(input('Valor em metros?'))
-m2=m1*1000
-m3=m2*10
-print(f'Valor em centímetros: {m2} cm\n Valor em milímetros: {m3} mm')
+medida=float(input('Valor em metros?'))
+print(f'Valor em Centímetros: {(medida*100)} cm\n Valor em Milímetros: {(medida*1000)} mm \n Valor em Decímetros:{(medida*10)} dm \n Valor em Decâmetros:{medida/10} dam\n Valor em Hectômetros:{medida/100}hm\n Valor em Quilômetros:{medida/1000}')
