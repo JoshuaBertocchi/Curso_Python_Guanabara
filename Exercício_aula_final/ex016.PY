@@ -1,3 +1,3 @@
-import math,emoji
+from math import trunc
 num = float(input('Digite um número flutuante:'))
-print(f'Esse é o seu número inteiro:{math.floor(num)}')
+print(f'Esse é o seu número inteiro:{trunc(num)}')
