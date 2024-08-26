@@ -1,7 +1,5 @@
-nome=input('Qual é o seu nome completo?')
-
-convert_cap=nome.title()
-
-res=('Silva' in convert_cap)
-
-print(f'Esse nome possui Silva?: {res}')
+frase=str(input('Digite algo:')).strip()
+frase_convert=frase.lower()
+print('Números de "A":',frase_convert.count('a'))
+print('O primeiro "A" aparece no espaço:',frase_convert.find('a')+1)
+print('O último "A" aparece no espaço:',frase_convert.rfind('a')+1)

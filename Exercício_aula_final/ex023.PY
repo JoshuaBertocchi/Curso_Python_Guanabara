@@ -1,6 +1,10 @@
-num=(input('Digite um número de 0 até 9999:'))
+num=int((input('Digite um número de 0 até 9999:')))
+u= num // 1 % 10
+d= num // 10 % 10
+c= num // 100 % 10
+m= num // 1000 % 10
 print(f'Número escolhido:{num}')
-unidade=print(f'Unidade:{num[3]}')
-dezena=print(f'Dezena:{num[2]}')
-centena=print(f'Centena:{num[1]}')
-milhar=print(f'Milhar:{num[0]}')
+print(f'Unidade:{u}')
+print(f'Dezena:{d}')
+print(f'Centena:{c}')
+print(f'Milhar:{m}')

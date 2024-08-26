@@ -1,7 +1,5 @@
-nome_complt=input('Escreva seu nome completo?:')
-frase01=('Esse é seu nome com Upper:')
-
-print(frase01, nome_complt.upper())
+nome_complt=str(input('Escreva seu nome completo?:'))
+print('Esse é seu nome com Upper:', nome_complt.upper())
 print('Esse é seu nome com Lower', nome_complt.lower())
 nome_complt01=(nome_complt.split())
 nome_complt02=''.join(nome_complt01)

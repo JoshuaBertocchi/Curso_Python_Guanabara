@@ -1,4 +1,4 @@
-city=input('Me diga uma cidade?')
+city=str(input('Me diga uma cidade?'))
 city_lista=(city.split())
 capitalize=city_lista[0].capitalize()
 res=('Santo' in capitalize)
