@@ -8,4 +8,4 @@ if (medida_a + medida_b >= medida_c) and (medida_b + medida_c >= medida_a) and (
 
 
 else:
-    print('O triângulo não será formado')
+    print('O triângulo NÃO será formado')
