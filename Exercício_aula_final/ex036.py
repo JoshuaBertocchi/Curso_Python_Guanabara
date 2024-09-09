@@ -1,22 +1,33 @@
 from time import sleep
-
 print('=$='*8,'Banco do Bertocchi','=$='*8)
 
 print('Seja bem-vindo ao banco!!!')
 
-v_casa=input('Qual é o valor da casa?') #01-Faz a pergunta do valor em STRING!!!
+v_casa=str(input('Qual é o valor da casa? R$:'))
+v_casa_convert=v_casa.replace('.','').replace(',','')
+v_casa_final=float(v_casa_convert)
+print('Captando Dados, Só um momento...')
+sleep(1)
 
-v_casa_convert=v_casa.replace('.','').replace(',','')#02-Substitui os pontos e vírgulas por espaços vazios
-print(type(v_casa_convert))#03-Verifica qual é o typo, se é str,float...
-v_casa_float=float(v_casa_convert)#04-Faz a conversão
-print(type(v_casa_float))#05-Confirma se foi convertido para float
-print(v_casa_float)#06-Mostra o valor final
+salário=str(input('Quanto você recebe por mês?R$:'))
+salário_convert=salário.replace(',','').replace('.','')
+salário_final=float(salário_convert)
+print('Salvando Dados, Só um momento...')
+sleep(1)
 
-'''print('Salvando Dados...')
-sleep(3)
+ano=float(input('Quantos anos você pretende pagar?'))
+sleep(1)
 
+#calculo prestação
+valor_30=((salário_final*30)/100)
+calculo_mês=ano*12
+calculo_parcelas=v_casa_final/calculo_mês
 
-salário=float(input('Quanto você recebe por mês?'))
+#print(valor_30, calculo_mês, calculo_parcelas)
 
-print('Salvando Dados...')
-sleep(3)'''
+if calculo_parcelas < valor_30:
+    print(f'Parabéns, vocês foi aprovado!!! O valor da parcela será R$:{calculo_parcelas:.2f}')
+
+else:
+    print('Emprestimo NEGADO!')
+
