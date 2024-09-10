@@ -1,18 +1,19 @@
 
-
+from datetime import date
 print('-=='*8, 'Nivel na Natação','==-'*8)
 
-idade = int(input('Me informe sua idade:'))
+ano = int(input('Me seu ano de nascimento:'))
+idade = date.today().year - ano
 
 if idade <= 9:
-    print('Seu nível é Mirim')
+    print(f'Seu nível é Mirim, Idade:{idade}')
 elif (idade <= 14) and (idade >= 10):
-    print('Seu nível é Infantil')
+    print(f'Seu nível é Infantil, Idade:{idade}')
 elif (idade <= 19) and (idade >= 15):
-    print('Seu nível é Junior')
-elif idade == 20:
-    print('Seu nível é Sênior')
-elif idade >= 21:
-    print('Seu nível é Master')
+    print(f'Seu nível é Junior, Idade:{idade}')
+elif idade <=25:
+    print(f'Seu nível é Sênior, Idade:{idade}')
+elif idade >=26:
+    print(f'Seu nível é Master, Idade:{idade}')
 else:
-    print('erro 404')
+    print(f'erro 404')

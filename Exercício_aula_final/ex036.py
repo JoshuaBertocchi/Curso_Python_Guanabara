@@ -23,11 +23,11 @@ valor_30=((salário_final*30)/100)
 calculo_mês=ano*12
 calculo_parcelas=v_casa_final/calculo_mês
 
-#print(valor_30, calculo_mês, calculo_parcelas)
+print(f'Valor 30%: {valor_30:.2f}, N° de meses:{calculo_mês:.2f}, Valor das parcelas. R$:{calculo_parcelas:.2f}')
 
 if calculo_parcelas < valor_30:
     print(f'Parabéns, vocês foi aprovado!!! O valor da parcela será R$:{calculo_parcelas:.2f}')
 
 else:
-    print('Emprestimo NEGADO!')
+    print('Empréstimo NEGADO!')
 

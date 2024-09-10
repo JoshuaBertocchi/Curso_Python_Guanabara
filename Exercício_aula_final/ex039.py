@@ -11,9 +11,9 @@ calculo_falta= 18 - calculo_idade #CALCULO de quantos anos faltam para se alista
 calculo_passou= calculo_idade - 18 #CALCULO de quantos anos passaram
 
 if calculo_idade < 18:
-    print(f'Ainda não chegou a hora, faltam {calculo_falta} anos.')
+    print(f'Ainda não chegou a hora, faltam {calculo_falta} anos, em {ano_convert + calculo_falta}.')
 elif calculo_idade > 18:
-    print(f'Seu alistamento já passou, foi a {calculo_passou} anos atrás.')
+    print(f'Seu alistamento já passou, foi a {calculo_passou} anos atrás, em {ano_convert - calculo_passou }.')
 elif calculo_idade == 18:
     print(f'Você possui {calculo_idade} anos, está no ano do seu alistamento!')
 else:
