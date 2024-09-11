@@ -50,13 +50,31 @@ sleep(0.2)
 print(f'Escolha máquina: {escolha_maquina}')
 print(f'Sua escolha: {escolha_usuario}')
 sleep(1)
-if escolha_usuario == lista[0] and escolha_maquina == lista[2]:
-    print('Usuário ganhoouu!!!')
-elif escolha_usuario == lista[2] and escolha_maquina == lista[1]:
-    print('Usuário ganhoouu!!!')
-elif escolha_usuario == lista[1] and escolha_maquina == lista[0]:
-    print('Usuário ganhoouu!!!')
-elif escolha_usuario == escolha_maquina:
-    print(' O jogo empatou!!!')
-else:
-    print('A máquina ganhou!!!')
+if escolha_maquina == 0:
+    if escolha_usuario == 0:
+        print('Empate')
+    elif escolha_usuario == 1:
+        print('JOGADOR VENCEU')
+    elif escolha_usuario == 2:
+        print('COMPUTADOR VENCEU')
+    else:
+        print('JOGADA INVÁLIDA!')
+elif escolha_maquina == 1:
+    if escolha_usuario == 1:
+        print('Empate')
+    elif escolha_usuario == 0:
+        print('JOGADOR VENCEU')
+    elif escolha_usuario == 2:
+        print('COMPUTADOR VENCEU')
+    else:
+        print('JOGADA INVÁLIDA!')
+elif escolha_maquina == 2:
+    if escolha_usuario == 2:
+        print('Empate')
+    elif escolha_usuario == 0:
+        print('JOGADOR VENCEU')
+    elif escolha_usuario == 1:
+        print('COMPUTADOR VENCEU')
+    else:
+        print('JOGADA INVÁLIDA!')
+
