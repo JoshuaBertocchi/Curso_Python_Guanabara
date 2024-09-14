@@ -1,11 +1,12 @@
-from time import sleep
-n_1 = int(input('Me diga um número: '))
-n_2 = int(input('Até que número você quer saber a tabuada?'))
-print('Calculando a tabuada!!!')
-sleep(1)
-for i in range(1, n_2+1):
-    calculo= n_1 * i
-    sleep(0.1)
-    print(f'{n_1} X {i} = {calculo}')
 
-print(f'Essa é a tabuada de {n_1} até {n_2}.')
+soma_pares = 0 #* 01-Variável para acumular a soma dos números pares.
+for i in range(1,6+1):
+    valor_n = int(input(f'{i}. Me diga um número:'))
+    par = valor_n % 2 #* 02- Verificar se o número é par.
+    if par == 0:
+        soma_pares += valor_n #* 03- Faz a soma.
+
+
+print(f'Valor da soma dos números pares: {soma_pares}')
+
+
