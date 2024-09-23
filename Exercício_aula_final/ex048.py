@@ -1,9 +1,12 @@
 print('-='*9, 'Multiplos de 3, até 500', '=-'* 9)
-for i in range(0, 500):
+cont = 0
+soma = 0
+for i in range(1, 501, 2):
 
     calculo = i % 3
 
     if calculo == 0:
         print(f'N°:{i}')
-
-print('Fim')
+        cont = cont + 1
+        soma = soma + i
+print(f'Soma de todos os {cont} valores é {soma}.')

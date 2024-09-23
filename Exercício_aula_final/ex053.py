@@ -1,6 +1,6 @@
 print('_-'*8, ': Palíndromo :', '-_'*8)
 
-frase = str(input('Digite uma frase:')).upper()
+frase = str(input('Digite uma frase:')).strip().upper()
 frase= frase.split()
 frase_final=''.join(frase)
 invertida = frase_final[::-1]

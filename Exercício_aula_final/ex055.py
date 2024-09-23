@@ -1,11 +1,12 @@
 
-for i in range(1,2+1):
-    nome = str(input(f'{i}. Me informe seu 1°Nome:'))
-    kg = float(input(f'Me diga o seu peso. KG:'))
-    if kg  :
-        print(f'Maior peso. KG:{kg}')
+pessoas = int(input('Quantas pessoas vão informar o peso?'))
+lista_kg = []
 
+for i in range(1,pessoas+1):
 
+    kg = float(input(f'{i}. Me diga o seu peso. KG:'))
+    lista_kg.append(kg)
+    lista_kg.sort()
 
-'''print(f'O maior pesso foi: {}')
-print(f'O menor peso foi: {}')'''
+print(f' Esse foi o maior peso. KG:{lista_kg[-1]:.2f}')
+print(f' Esse foi o menor peso. KG:{lista_kg[0]:.2f}')

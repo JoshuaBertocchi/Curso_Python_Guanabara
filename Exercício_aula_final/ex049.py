@@ -9,3 +9,5 @@ for i in range(1, n_2+1):
     print(f'{n_1} X {i} = {calculo}')
 
 print(f'Essa é a tabuada de {n_1} até {n_2}.')
+
+
