@@ -1,5 +1,5 @@
 
-sexo = str(input('Me diga seu sexo [M ou F]:  ')).upper()
+sexo = str(input('Me diga seu sexo [M ou F]:  ')).strip().upper()
 
 if sexo == 'M' or sexo == 'F':
     if sexo == 'M':
