@@ -1,30 +1,17 @@
-primeiro_termo = int(input("Me diga o Primeiro Termo:"))
-razao = int(input("Me informe a Razão:"))
 
-
-continuar = True
-
-
-while continuar:
-
-    termo_final = int(input("Quantos termos deseja ver:"))
-
-    for i in range(termo_final):
-        pa = primeiro_termo + ((i + 1) - 1) * razao
-        print(pa, end=" => ")
-
-    primeiro_termo = pa
-    print("Primeiro termo", primeiro_termo)
-
-    deseja_continuar = input(
-        """
-        1 - VEJA MAIS TERMOS CONTINUANDO DE ONDE PAROU
-        0 - SAIR
-        """
-    )
-    if deseja_continuar == "1":
-        continuar = True
-        continue
-    else:
-        print("Obrigado :), volte nunca")
-        break
+print('_-'*20,'Sequência de Fibonacci', '-_'*20)
+n = int(input('Me diga quantos termos você quer ver?'))
+#! Os termos inicias sempre seram esses!!!
+termo_1= 0
+termo_2= 1
+cont = 3 # O contador conta apartir do 3, porque já possui 2 temos salvos no código, o termo_1 e termo_2
+print(f' {termo_1} => {termo_2} =>' , end='') # imprime os primeiros 2 termos 
+while cont <= n: 
+    termo_3= termo_1 + termo_2
+    print(f' {termo_3} =>', end= '')
+    termo_1 = termo_2
+    termo_2 = termo_3
+    cont += 1
+    
+    
+print('Fim')

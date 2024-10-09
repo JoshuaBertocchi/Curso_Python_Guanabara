@@ -1,16 +1,30 @@
+primeiro_termo = int(input("Me diga o Primeiro Termo:"))
+razao = int(input("Me informe a Razão:"))
 
-pri_termo = int(input('Primeiro Termo: '))
-razao = int(input('Razão: '))
-contador = 0
+
+
+
+
 while True:
-    contador += 1
-    pa = pri_termo + (contador - 1) * razao
-    print(f' {pa}', end='=>')
-    if contador == 10:
-        n = int(input('\nQuer ver mais quantos termos?\nSe não digite 0: '))
-        if n != 0:
-            contador += n
-            continue
-        elif n == 0:
-            break
-print('FIM')
+
+    termo_final = int(input("Quantos termos deseja ver:"))
+
+    for i in range(termo_final):
+        pa = primeiro_termo + ((i + 1) - 1) * razao
+        print(pa, end=" => ")
+
+    primeiro_termo = pa
+    print("Primeiro termo", primeiro_termo)
+
+    deseja_continuar = input(
+        """
+        1 - VEJA MAIS TERMOS CONTINUANDO DE ONDE PAROU
+        0 - SAIR
+        """
+    )
+    if deseja_continuar == "1":
+        
+        continue
+    else:
+        print("Obrigado :), volte nunca")
+        break
