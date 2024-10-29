@@ -1,4 +1,3 @@
-
 print('_-'*20,'Sequência de Fibonacci', '-_'*20)
 n = int(input('Me diga quantos termos você quer ver?'))
 #! Os termos inicias sempre seram esses!!!
@@ -12,6 +11,4 @@ while cont <= n:
     termo_1 = termo_2
     termo_2 = termo_3
     cont += 1
-    
-    
 print('Fim')

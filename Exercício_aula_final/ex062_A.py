@@ -1,16 +1,17 @@
 
 pri_termo = int(input('Primeiro Termo: '))
 razao = int(input('Razão: '))
-contador = 0
-while True:
-    contador += 1
-    pa = pri_termo + (contador - 1) * razao
-    print(f' {pa}', end='=>')
-    if contador == 10:
-        n = int(input('\nQuer ver mais quantos termos?\nSe não digite 0: '))
-        if n != 0:
-            contador += n
-            continue
-        elif n == 0:
-            break
+termo = pri_termo
+contador = 1
+total = 0
+mais = 10
+while mais != 0:
+    total = total + mais
+    while contador <= total:
+        contador += 1
+        termo += pri_termo
+        print(f' {termo} =>', end='')
+    print(' PAUSA ')
+    mais = int(input('Quantos termos você quer mostrar a mais?'))
+print(f'Progressão finalizada com {total} termos mostrados.')    
 print('FIM')
